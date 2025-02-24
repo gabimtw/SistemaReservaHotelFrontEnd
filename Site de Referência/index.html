@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Trabalho de PEOO | Hospedagem de Luxo</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#service">Serviços</a></li>
+          <li><a href="#explore">Explorar</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+        <button class="btn nav__btn">Reservar Agora</button>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <p>Simples - Único - Amigável</p>
+        <h1>Faça-se em Casa<br />No Nosso <span>Hotel</span>.</h1>
+      </div>
+    </header>
+
+    <section class="section__container booking__container">
+      <form action="/" class="booking__form">
+        <div class="input__group">
+          <span><i class="ri-calendar-2-fill"></i></span>
+          <div>
+            <label for="check-in">ENTRADA</label>
+            <input type="text" placeholder="Data de Entrada" />
+          </div>
+        </div>
+        <div class="input__group">
+          <span><i class="ri-calendar-2-fill"></i></span>
+          <div>
+            <label for="check-out">SAÍDA</label>
+            <input type="text" placeholder="Data de Saída" />
+          </div>
+        </div>
+        <div class="input__group">
+          <span><i class="ri-user-fill"></i></span>
+          <div>
+            <label for="guest">HÓSPEDES</label>
+            <input type="text" placeholder="Número de Hóspedes" />
+          </div>
+        </div>
+        <div class="input__group input__btn">
+          <button class="btn">Verificar Disponibilidade</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/about.jpg" alt="sobre" />
+      </div>
+      <div class="about__content">
+        <p class="section__subheader">SOBRE NÓS</p>
+        <h2 class="section__header">As Melhores Férias Começam Aqui!</h2>
+        <p class="section__description">
+          Com foco em acomodações de qualidade, experiências personalizadas e
+          reservas fáceis, nossa plataforma garante que cada viajante embarque
+          em suas férias dos sonhos com confiança e entusiasmo.
+        </p>
+        <div class="about__btn">
+          <button class="btn">Saiba Mais</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container room__container">
+      <p class="section__subheader">NOSSOS QUARTOS</p>
+      <h2 class="section__header">O Momento Mais Memorável Começa Aqui.</h2>
+      <div class="room__grid">
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/room-1.jpg" alt="quarto" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Quarto Deluxe com Vista para o Mar</h4>
+            <p>
+              Desfrute do luxo com uma vista deslumbrante do oceano direto da sua suíte.
+            </p>
+            <h5>A partir de <span>R$ 1.500/noite</span></h5>
+            <button class="btn">Reservar Agora</button>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/room-2.jpg" alt="quarto" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Quarto Executivo com Vista para a Cidade</h4>
+            <p>
+              Experimente a elegância urbana e o conforto moderno no coração da cidade.
+            </p>
+            <h5>A partir de <span>R$ 1.000/noite</span></h5>
+            <button class="btn">Reservar Agora</button>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/room-3.jpg" alt="quarto" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Retiro Familiar com Jardim</h4>
+            <p>
+              Espaçoso e aconchegante, perfeito para criar memórias inesquecíveis com seus entes queridos.
+            </p>
+            <h5>A partir de <span>R$ 1.200/noite</span></h5>
+            <button class="btn">Reservar Agora</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service" id="service">
+      <div class="section__container service__container">
+        <div class="service__content">
+          <p class="section__subheader">SERVIÇOS</p>
+          <h2 class="section__header">Buscamos Apenas o Melhor.</h2>
+          <ul class="service__list">
+            <li>
+              <span><i class="ri-shield-star-line"></i></span>
+              Segurança de Alto Nível
+            </li>
+            <li>
+              <span><i class="ri-24-hours-line"></i></span>
+              Serviço de Quarto 24 Horas
+            </li>
+            <li>
+              <span><i class="ri-headphone-line"></i></span>
+              Sala de Conferências
+            </li>
+            <li>
+              <span><i class="ri-map-2-line"></i></span>
+              Suporte de Guia Turístico
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container banner__container">
+      <div class="banner__content">
+        <div class="banner__card">
+          <h4>25+</h4>
+          <p>Propriedades Disponíveis</p>
+        </div>
+        <div class="banner__card">
+          <h4>350+</h4>
+          <p>Reservas Concluídas</p>
+        </div>
+        <div class="banner__card">
+          <h4>600+</h4>
+          <p>Clientes Satisfeitos</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore" id="explore">
+      <p class="section__subheader">EXPLORAR</p>
+      <h2 class="section__header">O Que Há de Novo Hoje.</h2>
+      <div class="explore__bg">
+        <div class="explore__content">
+          <p class="section__description">01 JAN 2025</p>
+          <h4>Um Novo Menu Está Disponível em Nosso Hotel.</h4>
+          <button class="btn">Continuar</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo">
+            <a href="#home"><img src="assets/logo.png" alt="logo" /></a>
+          </div>
+          <p class="section__description">
+            Descubra um mundo de conforto, luxo e aventura enquanto explora nossa
+            seleção de hotéis, tornando cada momento da sua viagem verdadeiramente extraordinário.
+          </p>
+          <button class="btn">Reservar Agora</button>
+        </div>
+        <div class="footer__col">
+          <h4>LINKS RÁPIDOS</h4>
+          <ul class="footer__links">
+            <li><a href="#">Navegar por Destinos</a></li>
+            <li><a href="#">Ofertas Especiais e Pacotes</a></li>
+            <li><a href="#">Tipos de Quartos e Comodidades</a></li>
+            <li><a href="#">Avaliações e Classificações dos Clientes</a></li>
+            <li><a href="#">Dicas e Guias de Viagem</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>NOSSOS SERVIÇOS</h4>
+          <ul class="footer__links">
+            <li><a href="#">Assistência</a></li>
+            <li><a href="#">Opções de Reserva Flexíveis</a></li>
+            <li><a href="#">Transferências do Aeroporto</a></li>
+            <li><a href="#">Bem-Estar e Recreação</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>CONTATO</h4>
+          <ul class="footer__links">
+            <li><a href="#">trabalhodepeoo.com</a></li>
+          </ul>
+          <div class="footer__socials">
+            <a href="#"><img src="assets/facebook.png" alt="facebook" /></a>
+            <a href="#"><img src="assets/instagram.png" alt="instagram" /></a>
+            <a href="#"><img src="assets/youtube.png" alt="youtube" /></a>
+            <a href="#"><img src="assets/twitter.png" alt="twitter" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Trabalho de PEOO
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
