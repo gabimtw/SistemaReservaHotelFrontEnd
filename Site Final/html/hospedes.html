@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - Hóspedes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gerenciar Hóspedes</h1>
+    </header>
+
+    <main>
+        <!-- Formulário para adicionar ou editar hóspede -->
+        <section>
+            <h2>Adicionar Hóspede</h2>
+            <form id="formHospede">
+                <input type="text" id="nomeHospede" placeholder="Nome completo" required>
+                <input type="email" id="emailHospede" placeholder="Email" required>
+                <button type="submit">Salvar Hóspede</button>
+            </form>
+        </section>
+
+        <!-- Lista de hóspedes -->
+        <section>
+            <h2>Lista de Hóspedes</h2>
+            <table id="listaHospedes">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Documento</th>
+                        <th>Email</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aqui irão aparecer os hóspedes cadastrados -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Reservas</p>
+    </footer>
+
+    <script src="script/hospedes.js"></script>
+</body>
+</html>

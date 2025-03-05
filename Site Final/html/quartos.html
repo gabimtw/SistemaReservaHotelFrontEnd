@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Quartos</title>
+    <script src="quartos.js" defer></script>
+</head>
+<body>
+    <h1>Gestão de Quartos</h1>
+    
+    <!-- Formulário de Adicionar/Editar Quarto -->
+    <h2>Adicionar ou Editar Quarto</h2>
+    <form id="form-quarto">
+        <label for="numero">Número do Quarto:</label>
+        <input type="text" id="numero" name="numero" required><br>
+
+        <label for="tipo">Tipo de Quarto:</label>
+        <input type="text" id="tipo" name="tipo" required><br>
+
+        <label for="disponibilidade">Disponibilidade:</label>
+        <input type="text" id="disponibilidade" name="disponibilidade" required><br>
+
+        <button type="submit">Salvar Quarto</button>
+    </form>
+
+    <!-- Lista de Quartos Cadastrados -->
+    <h2>Lista de Quartos</h2>
+    <ul id="lista-quartos">
+        <!-- Aqui irão aparecer os quartos cadastrados -->
+    </ul>
+
+    <p><a href="dashboard.html">Voltar para o Dashboard</a></p>
+</body>
+</html>
