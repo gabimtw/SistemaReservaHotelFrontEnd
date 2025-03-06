@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Reservas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script/reservas.js" defer></script>
+</head>
+<body>
+    <h1>Gestão de Reservas</h1>
+
+    <!-- Formulário de Adicionar/Editar Reserva -->
+    <h2>Adicionar ou Editar Reserva</h2>
+    <form id="form-reserva">
+        <label for="hospede">Hóspede:</label>
+        <select id="hospede" name="hospede" required></select><br>
+
+        <label for="quarto">Quarto:</label>
+        <select id="quarto" name="quarto" required></select><br>
+
+        <label for="dataEntrada">Data de Entrada:</label>
+        <input type="date" id="dataEntrada" name="dataEntrada" required><br>
+
+        <label for="dataSaida">Data de Saída:</label>
+        <input type="date" id="dataSaida" name="dataSaida" required><br>
+
+        <button type="submit">Salvar Reserva</button>
+    </form>
+
+    <!-- Lista de Reservas -->
+    <h2>Lista de Reservas</h2>
+    <table id="lista-reservas">
+        <thead>
+            <tr>
+                <th>Hóspede</th>
+                <th>Quarto</th>
+                <th>Data de Entrada</th>
+                <th>Data de Saída</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aqui irão aparecer as reservas cadastradas -->
+        </tbody>
+    </table>
+
+    <p><a href="dashboard.html">Voltar para o Dashboard</a></p>
+</body>
+</html>

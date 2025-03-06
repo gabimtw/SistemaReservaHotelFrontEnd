@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - Usuários</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gerenciar Usuários</h1>
+    </header>
+
+    <main>
+        <!-- Formulário para adicionar ou editar usuário -->
+        <section>
+            <h2>Adicionar Usuário</h2>
+            <form id="formUsuario">
+                <input type="text" id="nomeUsuario" placeholder="Nome completo" required>
+                <input type="email" id="emailUsuario" placeholder="Email" required>
+                <input type="password" id="senhaUsuario" placeholder="Senha" required>
+                <button type="submit">Salvar Usuário</button>
+            </form>
+        </section>
+
+        <!-- Lista de usuários -->
+        <section>
+            <h2>Lista de Usuários</h2>
+            <table id="listaUsuarios">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aqui irão aparecer os usuários cadastrados -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Reservas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

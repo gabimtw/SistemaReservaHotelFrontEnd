@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - Pagamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gerenciar Pagamentos</h1>
+    </header>
+
+    <main>
+        <!-- Formulário para adicionar ou editar pagamento -->
+        <section>
+            <h2>Adicionar Pagamento</h2>
+            <form id="formPagamento">
+                <input type="text" id="nomeHospedePagamento" placeholder="Nome do Hóspede" required>
+                <input type="text" id="numeroReservaPagamento" placeholder="Número da Reserva" required>
+                <input type="number" id="valorPagamento" placeholder="Valor Pago" required>
+                <button type="submit">Salvar Pagamento</button>
+            </form>
+        </section>
+
+        <!-- Lista de pagamentos -->
+        <section>
+            <h2>Lista de Pagamentos</h2>
+            <table id="listaPagamentos">
+                <thead>
+                    <tr>
+                        <th>Hóspede</th>
+                        <th>Reserva</th>
+                        <th>Valor Pago</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aqui irão aparecer os pagamentos -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Reservas</p>
+    </footer>
+
+    <script src="script/pagamentos.js"></script>
+</body>
+</html>
