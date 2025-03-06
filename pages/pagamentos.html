@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - Pagamentos</title>
+    <style>
+        /* Reset moderno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+/* Fundo azul marinho uniforme com blur e gradiente */
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #ffffff;
+    background: linear-gradient(180deg, rgba(5, 15, 45, 0.95), rgba(10, 25, 50, 0.95));
+    position: relative;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    background: rgba(5, 15, 45, 0.95);
+    z-index: -1;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(5, 15, 45, 0.85);
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #00f3ff, #0066ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Formulário de Pagamentos */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+form input {
+    width: 80%;
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    background: rgba(10, 20, 40, 0.9);
+    color: #ffffff;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+form input:focus {
+    border-color: #00f3ff;
+    background: rgba(15, 30, 60, 0.95);
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+}
+
+form button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background: rgba(0, 102, 255, 0.8);
+    border: none;
+    color: #ffffff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+}
+
+form button:hover {
+    background: rgba(0, 102, 255, 1);
+    transform: scale(1.05);
+}
+
+/* Lista de Pagamentos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: rgba(10, 20, 40, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+    overflow: hidden;
+}
+
+table thead {
+    background: rgba(0, 102, 255, 0.8);
+    color: #ffffff;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+table tbody tr:nth-child(even) {
+    background: rgba(15, 30, 60, 0.8);
+}
+
+table tbody tr:nth-child(odd) {
+    background: rgba(10, 25, 50, 0.8);
+}
+
+table tbody tr:hover {
+    background: rgba(0, 102, 255, 0.6);
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 3rem;
+    padding: 1rem;
+    background: rgba(5, 15, 45, 0.85);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    main {
+        margin: 1rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gerenciar Pagamentos</h1>
+    </header>
+
+    <main>
+        <!-- Formulário para adicionar ou editar pagamento -->
+        <section>
+            <h2>Adicionar Pagamento</h2>
+            <form id="formPagamento">
+                <input type="text" id="nomeHospedePagamento" placeholder="Nome do Hóspede" required>
+                <input type="text" id="numeroReservaPagamento" placeholder="Número da Reserva" required>
+                <input type="number" id="valorPagamento" placeholder="Valor Pago" required>
+                <button type="submit">Salvar Pagamento</button>
+            </form>
+        </section>
+
+        <!-- Lista de pagamentos -->
+        <section>
+            <h2>Lista de Pagamentos</h2>
+            <table id="listaPagamentos">
+                <thead>
+                    <tr>
+                        <th>Hóspede</th>
+                        <th>Reserva</th>
+                        <th>Valor Pago</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aqui irão aparecer os pagamentos -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Reservas</p>
+    </footer>
+
+    <script src="script/pagamentos.js"></script>
+</body>
+</html>

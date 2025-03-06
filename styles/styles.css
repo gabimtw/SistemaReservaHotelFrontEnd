@@ -1,0 +1,129 @@
+/* Reset moderno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+/* Fundo azul marinho uniforme com blur e gradiente */
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #ffffff; /* Textos em branco */
+    background: linear-gradient(180deg, rgba(5, 15, 45, 0.95), rgba(10, 25, 50, 0.95)); /* Gradiente uniforme em azul marinho */
+    position: relative;
+    overflow-x: hidden;
+    text-align: center; /* Alinhamento central dos textos */
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px); /* Efeito de desfoque */
+    background: rgba(5, 15, 45, 0.95); /* Azul marinho consistente */
+    z-index: -1;
+}
+
+/* Container principal centralizado */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background: rgba(5, 10, 25, 0.85); /* Azul marinho uniforme */
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: rgba(5, 15, 45, 0.85); /* Azul marinho consistente */
+    border-radius: 20px 20px 0 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #00f3ff, #0066ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; /* Necessário para o efeito funcionar */
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+/* Seções de conteúdo */
+.intro {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: rgba(5, 10, 25, 0.85); /* Azul consistente */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    line-height: 2; /* Espaçamento ajustado */
+    text-align: center;
+}
+
+/* Botões */
+button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background: rgba(0, 102, 255, 0.8);
+    border: none;
+    color: #ffffff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+}
+
+button:hover {
+    background: rgba(0, 102, 255, 1);
+    transform: scale(1.05);
+}
+
+/* Link estilizado "Cadastre-se" */
+.cadastro a {
+    color: #007BFF;
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.cadastro a:hover {
+    color: #ffffff;
+    background: #007BFF;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    button {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
